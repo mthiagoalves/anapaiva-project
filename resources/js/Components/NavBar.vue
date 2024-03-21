@@ -2,7 +2,7 @@
 import NavLink from "@/Components/NavLink.vue";
 </script>
 <template>
-    <nav class="bg-white bg-opacity-90 fixed w-full z-10">
+    <nav class="bg-white bg-opacity-90 fixed w-full z-10 h-24">
         <div
             class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
         >

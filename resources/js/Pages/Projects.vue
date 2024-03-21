@@ -2,6 +2,7 @@
 import { Head } from "@inertiajs/vue3";
 import MainLayout from "@/Layouts/MainLayout.vue";
 import BannerTop from "@/Components/BannerTop.vue";
+import FirstSection from "@/Components/Projects/FirstSection.vue";
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import BannerTop from "@/Components/BannerTop.vue";
 
     <MainLayout>
         <template #main>
-            Project
+            <FirstSection> </FirstSection>
         </template>
     </MainLayout>
 </template>
