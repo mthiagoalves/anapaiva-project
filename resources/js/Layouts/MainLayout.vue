@@ -2,6 +2,8 @@
 import Footer from "@/Components/Footer.vue";
 import NavBar from "@/Components/NavBar.vue";
 import { onMounted } from "vue";
+import { initFlowbite } from 'flowbite'
+
 
 onMounted(() => {
     initFlowbite();
