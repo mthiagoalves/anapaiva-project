@@ -2,7 +2,7 @@
 import { Head } from '@inertiajs/vue3';
 </script>
 
-<template>
+<template #main>
     <Head>
         <title>Projects - Ana Paiva Decor</title>
     </Head>

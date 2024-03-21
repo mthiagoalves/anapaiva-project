@@ -1,9 +1,11 @@
 <script setup>
-import NavBar from "@/Components/NavBar.vue";
 import Footer from "@/Components/Footer.vue";
-import { computed } from "vue";
+import NavBar from "@/Components/NavBar.vue";
+import { onMounted } from "vue";
 
-const isHomePage = computed(() => route().current("homepage"));
+onMounted(() => {
+    initFlowbite();
+})
 </script>
 
 <template>

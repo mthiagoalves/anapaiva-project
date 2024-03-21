@@ -2,7 +2,7 @@
 import { Head, Link } from '@inertiajs/vue3';
 </script>
 
-<template>
+<template #main>
     <Head>
         <title>360° - Ana Paiva Decor</title>
     </Head>
