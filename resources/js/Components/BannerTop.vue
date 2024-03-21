@@ -70,12 +70,8 @@ export default {
         <swiper-slide
             class="background-banner-3 min-h-screen max-w-full"
         ></swiper-slide>
-        <div
-            class="min-h-screen w-full flex items-center justify-center absolute z-10 top-0 left-0 pointer-events-none"
-        >
-            <div
-                class="absolute lg:w-6/12 w-11/12 lg:h-72 h-60 rounded-2xl bg-white bg-opacity-75 flex items-center justify-center pointer-events-auto"
-            >
+        <div class="min-h-screen w-full flex items-center justify-center absolute z-10 top-0 left-0 pointer-events-none">
+            <div class="absolute lg:w-6/12 w-11/12 lg:h-72 h-60 rounded-2xl bg-white bg-opacity-75 flex items-center justify-center pointer-events-auto">
                 <h1 class="title-banner">Your taste, our project</h1>
                 <a
                     :href="route('projects')"

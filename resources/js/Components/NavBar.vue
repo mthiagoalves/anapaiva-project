@@ -77,9 +77,3 @@ import NavLink from "@/Components/NavLink.vue";
         </div>
     </nav>
 </template>
-
-<style scoped>
-.navbar-nav {
-    height: 90px;
-}
-</style>

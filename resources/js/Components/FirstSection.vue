@@ -22,7 +22,7 @@
                             <h5 class="title-card font-bold leading-none mb-4">
                                 Vibrant Interiors
                             </h5>
-                            <span class="text-card text-gray-400 leading-none"
+                            <span class="texts-card text-gray-400 leading-none"
                                 >Explore our dynamic range of styles, from
                                 modern minimalism to classic elegance, each
                                 tailored to client specifications.</span
@@ -48,7 +48,7 @@
                             <h5 class="title-card font-bold leading-none mb-4">
                                 Custom Designs
                             </h5>
-                            <span class="text-card text-gray-400 leading-none"
+                            <span class="texts-card text-gray-400 leading-none"
                                 >Envision your space transformed with our
                                 bespoke design services crafted to meet every
                                 aspect of your unique lifestyle.</span
@@ -74,7 +74,7 @@
                             <h5 class="title-card font-bold leading-none mb-4">
                                 Quality Finishes
                             </h5>
-                            <span class="text-card text-gray-400 leading-none"
+                            <span class="texts-card text-gray-400 leading-none"
                                 >Experience the finess of high-quality materials
                                 and products that bring durability and beauty to
                                 every interior we create.</span
@@ -106,22 +106,4 @@
     line-height: normal;
 }
 
-.text-card {
-    color: #808080;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.cta-cards {
-    display: flex;
-    width: 140px;
-    height: 40px;
-    padding: 9.842px 0px 11.158px 0px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    border: 2px solid #d9d9d9;
-}
 </style>
