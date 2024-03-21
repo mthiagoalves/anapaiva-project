@@ -35,3 +35,31 @@ body {
 .text-nav:hover {
     border-bottom: 2px solid #d1d5dbd1;
 }
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 25px;
+}
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    display: inline-block !important;
+    background: #fff !important;
+    opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: #ffffff8c !important;
+    border: 3px solid #fff !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.titles-aurelie {
+    color: #000;
+    text-align: center;
+    font-family: "Aurelie";
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    user-select: none;
+}
