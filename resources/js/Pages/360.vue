@@ -1,11 +1,17 @@
 <script setup>
-import { Head, Link } from '@inertiajs/vue3';
+import { Head } from "@inertiajs/vue3";
+import MainLayout from "@/Layouts/MainLayout.vue";
+import BannerTop from "@/Components/BannerTop.vue";
 </script>
 
-<template #main>
+<template>
     <Head>
         <title>360° - Ana Paiva Decor</title>
     </Head>
-    <h1>page homepages</h1>
 
+    <MainLayout>
+        <template #main>
+            350 page
+        </template>
+    </MainLayout>
 </template>

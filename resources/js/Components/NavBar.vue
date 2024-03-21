@@ -2,7 +2,7 @@
 import NavLink from "@/Components/NavLink.vue";
 </script>
 <template>
-    <nav class="bg-white bg-opacity-75 fixed w-full z-10">
+    <nav class="bg-white bg-opacity-90 fixed w-full z-10">
         <div
             class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
         >
@@ -63,8 +63,8 @@ import NavLink from "@/Components/NavLink.vue";
                     </li>
                     <li>
                         <NavLink
-                            :href="route('dashboard')"
-                            :active="route().current('dashboard')"
+                            :href="route('360')"
+                            :active="route().current('360')"
                         >
                             360°
                         </NavLink>

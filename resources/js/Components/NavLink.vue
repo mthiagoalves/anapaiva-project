@@ -14,7 +14,7 @@ const props = defineProps({
 
 const classes = computed(() =>
     props.active
-        ? "text-nav inline-flex items-center px-1 pt-1 transition duration-150 ease-in-out"
+        ? "text-nav-active inline-flex items-center px-1 pt-1 transition duration-150 ease-in-out"
         : "text-nav inline-flex items-center px-1 pt-1 transition duration-150 ease-in-out"
 );
 </script>
