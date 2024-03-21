@@ -24,7 +24,3 @@ const classes = computed(() =>
         <slot />
     </Link>
 </template>
-
-<style scoped>
-
-</style>

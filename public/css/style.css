@@ -16,6 +16,34 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+:root {
+    --color-standard: #dba398;
+    --color-white: #ffffff;
+    --transition-standard: all 0.5s;
+}
+::selection {
+    background-color: var(--color-standard);
+    color: var(--color-white);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-standard);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
 .text-nav,
 .text-nav-active {
     color: #000;
@@ -26,14 +54,15 @@ body {
     display: inline-flex;
     align-items: center;
     border-bottom: 2px solid transparent;
+    transition: var(--transition-standard);
 }
 
 .text-nav-active {
-    border-bottom: 2px solid #d1d5dbd1;
+    border-bottom: 2px solid #000000;
 }
 
 .text-nav:hover {
-    border-bottom: 2px solid #d1d5dbd1;
+    border-bottom: 2px solid #000000;
 }
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 25px;
@@ -62,4 +91,10 @@ body {
     font-weight: 400;
     line-height: normal;
     user-select: none;
+}
+
+@media(max-width: 756px){
+    .titles-aurelie{
+        font-size: 4rem;
+    }
 }

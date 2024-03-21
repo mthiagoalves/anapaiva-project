@@ -1,12 +1,12 @@
 <template>
-    <div class="max-w-screen-xl mt-32 mx-auto">
+    <div class="max-w-screen-xl mt-32 mb-20 mx-auto">
         <h2 class="titles-aurelie">We can do it for you</h2>
-        <p class="sub-title-first-section">
+        <p class="sub-title-first-section px-5 sm:px-0">
             Step into our process where you dream and we make it happen
         </p>
 
         <div class="mx-auto flex flex-wrap items-start justify-center mt-16">
-            <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-5 mb-5 lg:px-2">
                 <div
                     class="bg-white rounded-lg m-h-64 p-8 transform hover:translate-y-2 hover:shadow-xl transition duration-300"
                 >
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-5 mb-5 lg:px-2">
                 <div
                     class="bg-white rounded-lg m-h-64 p-8 transform hover:translate-y-2 hover:shadow-xl transition duration-300"
                 >
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-5 mb-5 lg:px-2">
                 <div
                     class="bg-white rounded-lg m-h-64 p-8 transform hover:translate-y-2 hover:shadow-xl transition duration-300"
                 >
