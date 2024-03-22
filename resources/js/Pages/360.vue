@@ -6,7 +6,7 @@ import FirstSection from "@/Components/360/FirstSection.vue";
 
 <template>
     <Head>
-        <title>Projects - Ana Paiva Decor</title>
+        <title>360° - Ana Paiva</title>
     </Head>
 
     <MainLayout>

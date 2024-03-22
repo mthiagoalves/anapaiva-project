@@ -7,7 +7,7 @@ import FirstSection from "@/Components/About/FirstSection.vue";
 
 <template>
     <Head>
-        <title>About - Ana Paiva Decor</title>
+        <title>About - Ana Paiva</title>
     </Head>
 
     <MainLayout>

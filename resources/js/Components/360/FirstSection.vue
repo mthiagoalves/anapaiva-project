@@ -33,7 +33,7 @@ export default {
     <div
         class="grid sm:grid-cols-2 grid-cols-1 gap-0 max-w-full pt-24 mx-auto mb-20"
     >
-        <div class="order-2 sm:order-1">
+        <div class="order-2 sm:order-2">
             <swiper
                 :slides-per-view="1"
                 :space-between="0"
@@ -84,9 +84,9 @@ export default {
                 /></swiper-slide>
             </swiper>
         </div>
-        <div class="flex justify-center flex-col order-1 sm:order-2 relative">
+        <div class="flex justify-center flex-col order-1 sm:order-1 relative">
             <a
-                :href="route('campo-pequeno')"
+                :href="route('360.campo-pequeno')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative"
             >
                 <h3 class="titles-aurelie">Campo Pequeno</h3>
@@ -97,7 +97,7 @@ export default {
                 ></div>
             </a>
         </div>
-        <div class="order-4 sm:order-4">
+        <div class="order-4 sm:order-3">
             <swiper
                 :slides-per-view="1"
                 :space-between="0"
@@ -147,8 +147,8 @@ export default {
                 /></swiper-slide>
             </swiper>
         </div>
-        <div class="flex justify-center flex-col order-3 sm:order-3">
-            <a :href="route('braganca')"
+        <div class="flex justify-center flex-col order-3 sm:order-4">
+            <a :href="route('360.braganca')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative"
             >
                 <h3 class="titles-aurelie">Braganca</h3>
@@ -159,7 +159,7 @@ export default {
                 ></div>
             </a>
         </div>
-        <div class="order-6 sm:order-5">
+        <div class="order-6 sm:order-6">
             <swiper
                 :slides-per-view="1"
                 :space-between="0"
@@ -209,8 +209,8 @@ export default {
                 /></swiper-slide>
             </swiper>
         </div>
-        <div class="flex justify-center flex-col order-5 sm:order-6 relative">
-            <a :href="route('parque-das-nacoes')"
+        <div class="flex justify-center flex-col order-5 sm:order-5 relative">
+            <a :href="route('360.parque-das-nacoes')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative"
             >
                 <h3 class="titles-aurelie">Parque das Nacoes</h3>
@@ -221,7 +221,7 @@ export default {
                 ></div>
             </a>
         </div>
-        <div class="order-8 sm:order-8">
+        <div class="order-8 sm:order-7">
             <swiper
                 :slides-per-view="1"
                 :space-between="0"
@@ -271,8 +271,8 @@ export default {
                 /></swiper-slide>
             </swiper>
         </div>
-        <div class="flex justify-center flex-col order-7 sm:order-7">
-            <a :href="route('holiday')"
+        <div class="flex justify-center flex-col order-7 sm:order-8">
+            <a :href="route('360.holiday')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative"
             >
                 <h3 class="titles-aurelie">Holiday</h3>

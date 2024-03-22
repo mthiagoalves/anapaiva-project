@@ -1,5 +1,5 @@
 <script setup>
-import GalleryImage from "@/Components/Projects/CampoPequeno/GalleryImage.vue";
+import GalleryImage from "@/Components/360/CampoPequeno/GalleryImage.vue";
 
 </script>
 <template>
