@@ -100,7 +100,7 @@ export default {
         </swiper>
         <swiper
             :slides-per-view="6"
-            :space-between="0"
+            :space-between="4"
             :modules="modules"
             watch-slides-progress
             @swiper="setThumbsSwiper"
