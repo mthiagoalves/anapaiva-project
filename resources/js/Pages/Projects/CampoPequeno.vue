@@ -6,7 +6,7 @@ import FirstSection from "@/Components/Projects/CampoPequeno/FirstSection.vue";
 
 <template>
     <Head>
-        <title>Campo Pqueno - Project</title>
+        <title>Campo Pequeno - Project</title>
     </Head>
 
     <MainLayout>

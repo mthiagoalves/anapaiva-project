@@ -123,6 +123,46 @@ body {
     border: 2px solid #d9d9d9;
 }
 
+.fslightbox-slide-btn-previous-container {
+    left: 3% !important;
+}
+
+.fslightbox-slide-btn-next-container {
+    right: 3% !important;
+}
+
+.fslightbox-slide-btn {
+    border-radius: 25px;
+    background: #fffffff2 !important;
+}
+
+.fslightbox-toolbar-button{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.fslightbox-toolbar {
+    right: 3% !important;
+    top: 35% !important;
+    background: transparent !important;
+}
+
+.fslightbox-toolbar > *:first-child {
+    background: #fff;
+    margin-right: 5px;
+    border-radius: 25px;
+}
+
+.fslightbox-toolbar > *:nth-child(2) {
+    background: #fff;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+
+.fslightbox-svg-path {
+    fill: #000000 !important;
+}
+
 @media (max-width: 756px) {
     .titles-aurelie {
         font-size: 4rem;
