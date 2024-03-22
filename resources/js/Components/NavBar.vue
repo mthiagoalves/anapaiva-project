@@ -1,5 +1,37 @@
 <script setup>
 import NavLink from "@/Components/NavLink.vue";
+import { computed, defineEmits, onMounted, ref } from "vue";
+
+const isProjects = computed(() => route().current("projects"));
+const isProjectsBraganca = computed(() => route().current("braganca"));
+const isProjectsCampoPequeno = computed(() => route().current("campo-pequeno"));
+const isProjectsHoliday = computed(() => route().current("holiday"));
+const isProjectsParqueDasNacoes = computed(() => route().current("parque-das-nacoes"));
+
+const is360 = computed(() => route().current("360"));
+const is360Braganca = computed(() => route().current("360.braganca"));
+const is360CampoPequeno = computed(() => route().current("360.campo-pequeno"));
+const is360Holiday = computed(() => route().current("360.holiday"));
+const is360ParqueDasNacoes = computed(() => route().current("360.parque-das-nacoes"));
+
+const returnRouteProjects = () => {
+    if(isProjects.value || isProjectsBraganca.value || isProjectsCampoPequeno.value || isProjectsHoliday.value ||  isProjectsParqueDasNacoes.value === true){
+        return true;
+    } else {
+        return false;
+    }
+
+};
+
+const returnRoute360 = () => {
+    if(is360.value || is360Braganca.value || is360CampoPequeno.value || is360Holiday.value ||  is360ParqueDasNacoes.value === true){
+        return true;
+    } else {
+        return false;
+    }
+
+};
+
 </script>
 <template>
     <nav class="bg-white bg-opacity-90 fixed w-full z-10 h-24">
@@ -56,7 +88,7 @@ import NavLink from "@/Components/NavLink.vue";
                     <li>
                         <NavLink
                             :href="route('projects')"
-                            :active="route().current('projects')"
+                            :active="returnRouteProjects()"
                         >
                             Projects
                         </NavLink>
@@ -64,7 +96,7 @@ import NavLink from "@/Components/NavLink.vue";
                     <li>
                         <NavLink
                             :href="route('360')"
-                            :active="route().current('360')"
+                            :active="returnRoute360()"
                         >
                             360°
                         </NavLink>

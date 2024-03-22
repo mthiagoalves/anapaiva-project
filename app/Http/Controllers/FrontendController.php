@@ -46,4 +46,24 @@ class FrontendController extends Controller
     {
         return Inertia::render('360');
     }
+
+    public function get360Braganca()
+    {
+        return Inertia::render('360/Braganca');
+    }
+
+    public function get360CampoPequeno()
+    {
+        return Inertia::render('360/CampoPequeno');
+    }
+
+    public function get360Holiday()
+    {
+        return Inertia::render('360/Holiday');
+    }
+
+    public function get360ParqueDasNacoes()
+    {
+        return Inertia::render('360/ParqueDasNacoes');
+    }
 }

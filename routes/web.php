@@ -22,6 +22,14 @@ Route::get('/projects/parque-das-nacoes', [FrontendController::class, 'getProjec
 
 Route::get('/360', [FrontendController::class, 'get360'])->name('360');
 
+Route::get('/360/braganca', [FrontendController::class, 'get360Braganca'])->name('360.braganca');
+
+Route::get('/360/campo-pequeno', [FrontendController::class, 'get360CampoPequeno'])->name('360.campo-pequeno');
+
+Route::get('/360/holiday', [FrontendController::class, 'get360Holiday'])->name('360.holiday');
+
+Route::get('/360/parque-das-nacoes', [FrontendController::class, 'get360ParqueDasNacoes'])->name('360.parque-das-nacoes');
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
