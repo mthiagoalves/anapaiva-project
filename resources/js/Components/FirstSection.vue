@@ -88,7 +88,7 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped> 
 .title-card {
     color: #000;
     font-size: 20px;
