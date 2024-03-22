@@ -89,15 +89,6 @@
 </template>
 
 <style scoped>
-.sub-title-first-section {
-    color: #808080;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 .title-card {
     color: #000;
     font-size: 20px;

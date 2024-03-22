@@ -12,6 +12,14 @@ Route::get('/about', [FrontendController::class, 'getAbout'])->name('about');
 
 Route::get('/projects', [FrontendController::class, 'getProjects'])->name('projects');
 
+Route::get('/projects/braganca', [FrontendController::class, 'getProjectBraganca'])->name('braganca');
+
+Route::get('/projects/campo-pequeno', [FrontendController::class, 'getProjectCampoPequeno'])->name('campo-pequeno');
+
+Route::get('/projects/holiday', [FrontendController::class, 'getProjectHoliday'])->name('holiday');
+
+Route::get('/projects/parque-das-nacoes', [FrontendController::class, 'getProjectParqueDasNacoes'])->name('parque-das-nacoes');
+
 Route::get('/360', [FrontendController::class, 'get360'])->name('360');
 
 Route::get('/dashboard', function () {

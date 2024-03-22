@@ -94,6 +94,15 @@ body {
     user-select: none;
 }
 
+.sub-title-first-section {
+    color: #808080;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .texts-cards {
     color: #808080;
     text-align: center;
