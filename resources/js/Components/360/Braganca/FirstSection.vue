@@ -16,7 +16,7 @@ import GalleryImage from "@/Components/360/Braganca/GalleryImage.vue";
         />
     </div>
 
-    <div class="max-w-screen-xl mt-24 mb-20 mx-auto">
+    <div class="max-w-screen-xl mt-24 mx-auto">
         <h2 class="titles-aurelie">Braganca Apartment</h2>
         <p class="sub-title-first-section px-5 sm:px-60">
             Step into this timeless apartment, where the past meets the present

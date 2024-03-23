@@ -1,5 +1,5 @@
 <script setup>
-import GalleryImage from "@/Components/Projects/Holiday/GalleryImage.vue";
+import GalleryImage from "@/Components/360/Holiday/GalleryImage.vue";
 
 </script>
 <template>
@@ -16,7 +16,7 @@ import GalleryImage from "@/Components/Projects/Holiday/GalleryImage.vue";
         />
     </div>
 
-    <div class="max-w-screen-xl mt-24 mb-20 mx-auto">
+    <div class="max-w-screen-xl mt-24 mx-auto">
         <h2 class="titles-aurelie">Holyday Apartment</h2>
         <p class="sub-title-first-section px-5 sm:px-60">
             Step into this timeless apartment, where the past meets the present
