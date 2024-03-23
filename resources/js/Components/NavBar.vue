@@ -73,11 +73,11 @@ const returnRoute360 = () => {
                     />
                 </svg>
             </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <div class="hidden w-full md:block md:w-auto bg-white bg-opacity-70 sm:bg-transparent" id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-center"
                 >
-                    <li>
+                    <li class="sm:my-0 my-1">
                         <NavLink
                             :href="route('about')"
                             :active="route().current('about')"
@@ -85,7 +85,7 @@ const returnRoute360 = () => {
                             About
                         </NavLink>
                     </li>
-                    <li>
+                    <li class="sm:my-0 my-1">
                         <NavLink
                             :href="route('projects')"
                             :active="returnRouteProjects()"
@@ -93,7 +93,7 @@ const returnRoute360 = () => {
                             Projects
                         </NavLink>
                     </li>
-                    <li>
+                    <li class="sm:my-0 my-1">
                         <NavLink
                             :href="route('360')"
                             :active="returnRoute360()"
@@ -101,7 +101,7 @@ const returnRoute360 = () => {
                             360°
                         </NavLink>
                     </li>
-                    <li>
+                    <li class="sm:my-0 my-1">
                         <a href="#contact" class="text-nav"> Contact </a>
                     </li>
                 </ul>

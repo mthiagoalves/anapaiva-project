@@ -74,42 +74,61 @@ export default {
             </swiper-slide>
         </swiper>
         <swiper :slides-per-view="6" :space-between="4" :modules="modules" watch-slides-progress
-            @swiper="setThumbsSwiper" @slideChange="onSlideChange" class="-top-12 sm:-top-24 max-w-4xl opacity-50">
+            @swiper="setThumbsSwiper" @slideChange="onSlideChange"
+            class="-top-16 sm:-top-24 sm:max-w-4xl max-w-xs opacity-50">
             <swiper-slide class="slide-thumb">
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500">
                 </div>
-                <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1500x660/e9b8b1/fff" alt="" />
+                <img class="h-auto max-w-full ml-auto hidden sm:block" src="https://dummyimage.com/1500x660/e9b8b1/fff"
+                    alt="" />
+                <img class="h-auto max-w-full ml-auto block sm:hidden" src="https://dummyimage.com/800x800/e9b8b1/fff"
+                    alt="" />
             </swiper-slide>
             <swiper-slide class="slide-thumb">
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500">
                 </div>
-                <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1500x660/9e1883/fff" alt="" />
+                <img class="h-auto max-w-full ml-auto hidden sm:block" src="https://dummyimage.com/1500x660/9e1883/fff"
+                    alt="" />
+                <img class="h-auto max-w-full ml-auto block sm:hidden" src="https://dummyimage.com/800x800/9e1883/fff"
+                    alt="" />
             </swiper-slide>
             <swiper-slide class="slide-thumb">
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500">
                 </div>
-                <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1500x660/45199c/fff" alt="" />
+                <img class="h-auto max-w-full ml-auto hidden sm:block" src="https://dummyimage.com/1500x660/45199c/fff"
+                    alt="" />
+                <img class="h-auto max-w-full ml-auto block sm:hidden" src="https://dummyimage.com/800x800/45199c/fff"
+                    alt="" />
             </swiper-slide>
             <swiper-slide class="slide-thumb">
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500">
                 </div>
-                <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1500x660/379662/fff" alt="" />
+                <img class="h-auto max-w-full ml-auto hidden sm:block" src="https://dummyimage.com/1500x660/379662/fff"
+                    alt="" />
+                <img class="h-auto max-w-full ml-auto block sm:hidden" src="https://dummyimage.com/800x800/379662/fff"
+                    alt="" />
             </swiper-slide>
             <swiper-slide class="slide-thumb">
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500">
                 </div>
-                <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1500x660/917430/fff" alt="" />
+                <img class="h-auto max-w-full ml-auto hidden sm:block" src="https://dummyimage.com/1500x660/917430/fff"
+                    alt="" />
+                <img class="h-auto max-w-full ml-auto block sm:hidden" src="https://dummyimage.com/800x800/917430/fff"
+                    alt="" />
             </swiper-slide>
             <swiper-slide class="slide-thumb">
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500">
                 </div>
-                <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1500x660/20bfaa/fff" alt="" />
+                <img class="h-auto max-w-full ml-auto hidden sm:block" src="https://dummyimage.com/1500x660/20bfaa/fff"
+                    alt="" />
+                <img class="h-auto max-w-full ml-auto block sm:hidden" src="https://dummyimage.com/800x800/20bfaa/fff"
+                    alt="" />
             </swiper-slide>
         </swiper>
     </div>
