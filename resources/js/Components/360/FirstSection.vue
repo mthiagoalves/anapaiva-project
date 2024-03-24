@@ -1,10 +1,7 @@
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { EffectFade } from "swiper/modules";
-import { Pagination } from "swiper/modules";
+import { EffectFade, Pagination } from "swiper/modules";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
@@ -16,10 +13,8 @@ export default {
     },
     setup() {
         const onSwiper = (swiper) => {
-            console.log(swiper);
         };
         const onSlideChange = () => {
-            console.log("slide change");
         };
         return {
             onSwiper,
@@ -27,6 +22,42 @@ export default {
             modules: [Pagination, EffectFade],
         };
     },
+    methods: {
+        addHoverClassSwiper(event, cardClass) {
+            event.target.classList.add('hover:bg-opacity-30');
+            const divCard = document.querySelector('.hover-card-' + cardClass);
+            if (divCard) {
+                divCard.classList.remove('bg-opacity-0');
+                divCard.classList.add('bg-opacity-5');
+            }
+        },
+        removeHoverClassSwiper(event, cardClass) {
+            event.target.classList.remove('hover:bg-opacity-30');
+            const divCard = document.querySelector('.hover-card-' + cardClass);
+            if (divCard) {
+                divCard.classList.remove('bg-opacity-5');
+                divCard.classList.add('bg-opacity-0');
+            }
+        },
+        addHoverClassCard(event, slideClass) {
+            event.target.classList.add('hover:bg-opacity-5');
+            const divSlides = document.querySelectorAll('.hover-slide-' + slideClass);
+            console.log(divSlides);
+            divSlides.forEach(divSlide => {
+                divSlide.classList.remove('opacity-0', 'hover:opacity-100');
+                divSlide.classList.add('bg-opacity-30');
+            });
+
+        },
+        removeHoverClassCard(event, slideClass) {
+            event.target.classList.remove('hover:bg-opacity-5');
+            const divSlides = document.querySelectorAll('.hover-slide-' + slideClass);
+            divSlides.forEach(divSlide => {
+                divSlide.classList.remove('bg-opacity-30');
+                divSlide.classList.add('opacity-0', 'hover:opacity-100');
+            });
+        }
+    }
 };
 </script>
 <template>
@@ -36,29 +67,29 @@ export default {
                 dynamicBullets: false,
             }" effect="fade" @swiper="onSwiper" @slideChange="onSlideChange">
                 <swiper-slide>
-                    <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                    <div class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-1"
+                        @mouseover="addHoverClassSwiper($event, '1')" @mouseleave="removeHoverClassSwiper($event, '1')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/379662/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-1" @mouseover="addHoverClassSwiper($event, '1')" @mouseleave="removeHoverClassSwiper($event, '1')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/9e1883/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-1" @mouseover="addHoverClassSwiper($event, '1')" @mouseleave="removeHoverClassSwiper($event, '1')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/45199c/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-1" @mouseover="addHoverClassSwiper($event, '1')" @mouseleave="removeHoverClassSwiper($event, '1')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/e9b8b1/fff" alt="" />
@@ -71,8 +102,8 @@ export default {
                 <h3 class="titles-aurelie">Campo Pequeno</h3>
                 <p class="sub-title-card-projects">Apartment</p>
                 <span class="years-project mb-6">2023</span>
-                <div
-                    class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-5 div-opacity transition duration-500">
+                <div class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 hover-card-1"
+                    @mouseover="addHoverClassCard($event, '1')" @mouseleave="removeHoverClassCard($event, '1')">
                 </div>
             </a>
         </div>
@@ -82,28 +113,28 @@ export default {
             }" effect="fade" @swiper="onSwiper" @slideChange="onSlideChange">
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-2" @mouseover="addHoverClassSwiper($event, '2')" @mouseleave="removeHoverClassSwiper($event, '2')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/9e1883/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-2" @mouseover="addHoverClassSwiper($event, '2')" @mouseleave="removeHoverClassSwiper($event, '2')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/e9b8b1/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-2" @mouseover="addHoverClassSwiper($event, '2')" @mouseleave="removeHoverClassSwiper($event, '2')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/45199c/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-2" @mouseover="addHoverClassSwiper($event, '2')" @mouseleave="removeHoverClassSwiper($event, '2')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/379662/fff" alt="" />
@@ -116,8 +147,8 @@ export default {
                 <h3 class="titles-aurelie">Braganca</h3>
                 <p class="sub-title-card-projects">Apartment</p>
                 <span class="years-project mb-6">2022</span>
-                <div
-                    class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-5 div-opacity transition duration-500">
+                <div class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 hover-card-2"
+                    @mouseover="addHoverClassCard($event, '2')" @mouseleave="removeHoverClassCard($event, '2')">
                 </div>
             </a>
         </div>
@@ -127,28 +158,28 @@ export default {
             }" effect="fade" @swiper="onSwiper" @slideChange="onSlideChange">
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-3" @mouseover="addHoverClassSwiper($event, '3')" @mouseleave="removeHoverClassSwiper($event, '3')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/e9b8b1/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-3" @mouseover="addHoverClassSwiper($event, '3')" @mouseleave="removeHoverClassSwiper($event, '3')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/9e1883/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-3" @mouseover="addHoverClassSwiper($event, '3')" @mouseleave="removeHoverClassSwiper($event, '3')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/45199c/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-3" @mouseover="addHoverClassSwiper($event, '3')" @mouseleave="removeHoverClassSwiper($event, '3')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/379662/fff" alt="" />
@@ -162,7 +193,8 @@ export default {
                 <p class="sub-title-card-projects">Apartment</p>
                 <span class="years-project mb-6">2022</span>
                 <div
-                    class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-5 div-opacity transition duration-500">
+                    class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-5 div-opacity transition duration-500 hover-card-3"
+                    @mouseover="addHoverClassCard($event, '3')" @mouseleave="removeHoverClassCard($event, '3')">
                 </div>
             </a>
         </div>
@@ -172,28 +204,28 @@ export default {
             }" effect="fade" @swiper="onSwiper" @slideChange="onSlideChange">
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-4" @mouseover="addHoverClassSwiper($event, '4')" @mouseleave="removeHoverClassSwiper($event, '4')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/45199c/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-4" @mouseover="addHoverClassSwiper($event, '4')" @mouseleave="removeHoverClassSwiper($event, '4')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/e9b8b1/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-4" @mouseover="addHoverClassSwiper($event, '4')" @mouseleave="removeHoverClassSwiper($event, '4')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/9e1883/fff" alt="" />
                 </swiper-slide>
                 <swiper-slide>
                     <div
-                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-30 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center">
+                        class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 opacity-0 hover:opacity-100 flex justify-center hover-slide-4" @mouseover="addHoverClassSwiper($event, '4')" @mouseleave="removeHoverClassSwiper($event, '4')">
                         <img src="/imgs/icons/360.svg" alt="">
                     </div>
                     <img class="h-auto max-w-full ml-auto" src="https://dummyimage.com/1100x1000/379662/fff" alt="" />
@@ -207,7 +239,8 @@ export default {
                 <p class="sub-title-card-projects">Apartment</p>
                 <span class="years-project mb-6">2021</span>
                 <div
-                    class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-5 div-opacity transition duration-500">
+                    class="absolute min-h-full min-w-full bg-black bg-opacity-0 hover:bg-opacity-5 div-opacity transition duration-500 hover-card-4"
+                    @mouseover="addHoverClassCard($event, '4')" @mouseleave="removeHoverClassCard($event, '4')">
                 </div>
             </a>
         </div>
