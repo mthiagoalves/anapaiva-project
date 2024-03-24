@@ -2,11 +2,12 @@
 import { ref } from "vue";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { EffectFade } from "swiper/modules";
-import { Thumbs } from "swiper/modules";
+import { EffectFade, Navigation, Thumbs } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
+import 'swiper/css/navigation';
+
 
 const thumbsSwiper = ref({});
 
@@ -27,7 +28,7 @@ export default {
             onSlideChange,
             thumbsSwiper,
             setThumbsSwiper,
-            modules: [Thumbs, EffectFade],
+            modules: [Thumbs, EffectFade, Navigation],
         };
     },
 };
@@ -35,7 +36,7 @@ export default {
 <template>
     <div class="max-w-screen-xl mt-12 mx-auto">
         <swiper :slides-per-view="1" :space-between="0" :modules="modules" effect="fade"
-            :thumbs="{ swiper: thumbsSwiper }" @swiper="onSwiper" @slideChange="onSlideChange">
+            :thumbs="{ swiper: thumbsSwiper }" :navigation="true" @swiper="onSwiper" @slideChange="onSlideChange">
             <swiper-slide>
                 <img class="h-auto max-w-full ml-auto hidden sm:block" src="https://dummyimage.com/1500x660/e9b8b1/fff"
                     alt="" />

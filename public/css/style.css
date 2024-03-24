@@ -123,6 +123,7 @@ body {
     border: 2px solid #d9d9d9;
 }
 
+/* Lightbox style */
 .fslightbox-slide-btn-previous-container {
     left: 3% !important;
 }
@@ -136,7 +137,7 @@ body {
     background: #fffffff2 !important;
 }
 
-.fslightbox-toolbar-button{
+.fslightbox-toolbar-button {
     width: 40px !important;
     height: 40px !important;
 }
@@ -163,6 +164,50 @@ body {
     fill: #000000 !important;
 }
 
+/* end lightbox style */
+
+/* swiper arrow style */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px !important;
+}
+
+.swiper-button-next:after{
+    margin-left: 5px;
+}
+
+.swiper-button-prev:after{
+    margin-right: 2px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffffff !important;
+    top: auto !important;
+    bottom: 7.5% !important;
+    width: 40px !important;
+    height: 40px !important;
+    border: 2.5px solid #ffffff;
+    border-radius: 25px;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 10% !important;
+    right: auto !important;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 10% !important;
+    left: auto !important;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+    opacity: 0 !important;
+}
+
+/* and swiper arrow style */
 @media (max-width: 756px) {
     .titles-aurelie {
         font-size: 4rem;
