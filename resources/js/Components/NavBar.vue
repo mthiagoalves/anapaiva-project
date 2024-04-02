@@ -73,7 +73,7 @@ const returnRoute360 = () => {
                     />
                 </svg>
             </button>
-            <div class="hidden w-full md:block md:w-auto bg-white bg-opacity-70 sm:bg-transparent" id="navbar-default">
+            <div class="hidden w-full md:block md:w-auto bg-white bg-opacity-70 sm:bg-transparent mt-6" id="navbar-default">
                 <ul
                     class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-center"
                 >

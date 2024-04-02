@@ -10,7 +10,7 @@ onMounted(() => {
 })
 </script>
 
-<template>
+<template class="max-w-screen-3xl">
     <div>
         <NavBar> </NavBar>
 
