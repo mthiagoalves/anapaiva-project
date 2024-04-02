@@ -34,9 +34,9 @@ const returnRoute360 = () => {
 
 </script>
 <template>
-    <nav class="bg-white bg-opacity-90 fixed w-full z-10 h-24">
+    <nav class="bg-white bg-opacity-90 fixed w-full z-10 h-24 p-6">
         <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
         >
             <a
                 :href="route('homepage')"
@@ -73,11 +73,11 @@ const returnRoute360 = () => {
                     />
                 </svg>
             </button>
-            <div class="hidden w-full md:block md:w-auto bg-white bg-opacity-70 sm:bg-transparent mt-6" id="navbar-default">
+            <div class="hidden w-full md:block md:w-auto bg-white bg-opacity-90 sm:bg-transparent absolute sm:static top-24 left-0" id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-center"
+                    class="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse text-center"
                 >
-                    <li class="sm:my-0 my-1">
+                    <li class="sm:my-0 my-2.5">
                         <NavLink
                             :href="route('about')"
                             :active="route().current('about')"
@@ -85,7 +85,7 @@ const returnRoute360 = () => {
                             About
                         </NavLink>
                     </li>
-                    <li class="sm:my-0 my-1">
+                    <li class="sm:my-0 my-2.5">
                         <NavLink
                             :href="route('projects')"
                             :active="returnRouteProjects()"
@@ -93,7 +93,7 @@ const returnRoute360 = () => {
                             Projects
                         </NavLink>
                     </li>
-                    <li class="sm:my-0 my-1">
+                    <li class="sm:my-0 my-2.5">
                         <NavLink
                             :href="route('360')"
                             :active="returnRoute360()"
@@ -101,7 +101,7 @@ const returnRoute360 = () => {
                             360°
                         </NavLink>
                     </li>
-                    <li class="sm:my-0 my-1">
+                    <li class="sm:my-0 my-2.5">
                         <a href="#contact" class="text-nav"> Contact </a>
                     </li>
                 </ul>
