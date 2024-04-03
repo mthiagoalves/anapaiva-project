@@ -1,39 +1,25 @@
 <template>
     <div id="contact"
-        class="h-96 max-w-screen-xl border-t-2 border-gray-300 mx-auto flex flex-wrap items-center justify-center p-6"
-    >
+        class="h-96 max-w-screen-xl border-t-2 border-gray-300 mx-auto flex flex-wrap items-center justify-center p-6">
         <div class="w-full h-full sm:h-auto flex sm:flex-row flex-col items-center justify-between">
-            <a
-                :href="route('homepage')"
-                class="flex items-center space-x-3 rtl:space-x-reverse"
-            >
+            <a :href="route('homepage')" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="/imgs/logo.svg" class="h-12" alt="Flowbite Logo" />
-                <img
-                    src="/imgs/logo-name.svg"
-                    class="h-12"
-                    alt="Flowbite Logo"
-                />
+                <img src="/imgs/logo-name.svg" class="h-12" alt="Flowbite Logo" />
             </a>
-            <div class="email-phone text-center sm:text-start">
-                <a href="mailto:anapaivadecor@gmail.com"
-                    >anapaivadecor@gmail.com</a
-                >
-                <p>+351 910000000</p>
+            <div class="email-phone text-center sm:text-start leading-10">
+                <a href="mailto:anapaivadecor@gmail.com" class="block" target="_blank">anapaivadecor@gmail.com</a>
+                <a href="https://wa.link/86kbyo" class="block" target="_blank">+351 912214369</a>
             </div>
             <div class="flex items-center space-x-1 rtl:space-x-reverse">
                 <p>Follow us:</p>
                 <div class="div-follow">
-                    <a href="">
-                        <img
-                            src="/imgs/icons/insta-white.png"
-                            alt=""
-                            class="icon-insta"
-                        />
+                    <a href="" target="_blank">
+                        <img src="/imgs/icons/insta-white.png" alt="" class="icon-insta" />
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 </template>
 
 <style scoped>

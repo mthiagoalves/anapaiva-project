@@ -27,7 +27,7 @@
                                 modern minimalism to classic elegance, each
                                 tailored to client specifications.</span
                             >
-                            <a href="" class="cta-cards mt-8"> Know more </a>
+                            <a :href="route('projects')" class="cta-cards mt-8"> Know more </a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                                 bespoke design services crafted to meet every
                                 aspect of your unique lifestyle.</span
                             >
-                            <a href="" class="cta-cards mt-8"> Let's talk </a>
+                            <a href="https://wa.link/86kbyo" target="_blank"class="cta-cards mt-8"> Let's talk </a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                                 and products that bring durability and beauty to
                                 every interior we create.</span
                             >
-                            <a href="" class="cta-cards mt-8"> Discover more </a>
+                            <a :href="route('360')" class="cta-cards mt-8"> Discover more </a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
     </div>
 </template>
 
-<style scoped> 
+<style scoped>
 .title-card {
     color: #000;
     font-size: 20px;
