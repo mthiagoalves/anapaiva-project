@@ -22,24 +22,39 @@ class FrontendController extends Controller
         return Inertia::render('Projects');
     }
 
-    public function getProjectBraganca()
+    public function getProjectGeres()
     {
-        return Inertia::render('Projects/Braganca');
+        return Inertia::render('Projects/Geres');
     }
 
-    public function getProjectCampoPequeno()
+    public function getProjectGuimaraes()
     {
-        return Inertia::render('Projects/CampoPequeno');
+        return Inertia::render('Projects/Guimaraes');
     }
 
-    public function getProjectHoliday()
+    public function getProjectEscritorios()
     {
-        return Inertia::render('Projects/Holiday');
+        return Inertia::render('Projects/Escritorios');
     }
 
-    public function getProjectParqueDasNacoes()
+    public function getProjectSantaFe()
     {
-        return Inertia::render('Projects/ParqueDasNacoes');
+        return Inertia::render('Projects/SantaFe');
+    }
+
+    public function getProjectCasaTemporao()
+    {
+        return Inertia::render('Projects/CasaTemporao');
+    }
+
+    public function getProjectEspinhoSeasideRetreat()
+    {
+        return Inertia::render('Projects/EspinhoSeasideRetreat');
+    }
+
+    public function getProjectModernLiving()
+    {
+        return Inertia::render('Projects/ModernLiving');
     }
 
     public function get360()

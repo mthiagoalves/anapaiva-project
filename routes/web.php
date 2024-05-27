@@ -14,13 +14,19 @@ Route::get('/about', [FrontendController::class, 'getAbout'])->name('about');
 
 Route::get('/projects', [FrontendController::class, 'getProjects'])->name('projects');
 
-Route::get('/projects/braganca', [FrontendController::class, 'getProjectBraganca'])->name('braganca');
+Route::get('/projects/geres-house', [FrontendController::class, 'getProjectGeres'])->name('geres');
 
-Route::get('/projects/campo-pequeno', [FrontendController::class, 'getProjectCampoPequeno'])->name('campo-pequeno');
+Route::get('/projects/guimaraes-heritage-residence', [FrontendController::class, 'getProjectGuimaraes'])->name('guimaraes-heritage-residence');
 
-Route::get('/projects/holiday', [FrontendController::class, 'getProjectHoliday'])->name('holiday');
+Route::get('/projects/office-project', [FrontendController::class, 'getProjectEscritorios'])->name('office-project');
 
-Route::get('/projects/parque-das-nacoes', [FrontendController::class, 'getProjectParqueDasNacoes'])->name('parque-das-nacoes');
+Route::get('/projects/santa-fe-luxury-villa', [FrontendController::class, 'getProjectSantaFe'])->name('santa-fe-luxury-villa');
+
+Route::get('/projects/timeless-temporao-house', [FrontendController::class, 'getProjectCasaTemporao'])->name('timeless-temporao-house');
+
+Route::get('/projects/espinho-seaside-retreat', [FrontendController::class, 'getProjectEspinhoSeasideRetreat'])->name('espinho-seaside-retreat');
+
+Route::get('/projects/modern-living', [FrontendController::class, 'getProjectModernLiving'])->name('modern-living');
 
 Route::get('/360', [FrontendController::class, 'get360'])->name('360');
 

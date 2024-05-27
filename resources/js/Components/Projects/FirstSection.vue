@@ -102,7 +102,7 @@ export default {
             </swiper>
         </div>
         <div class="flex justify-center flex-col order-1 sm:order-2 relative">
-            <a :href="route('campo-pequeno')"
+            <a :href="route('geres')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Geres</h3>
                 <p class="sub-title-card-projects">House</p>
@@ -148,7 +148,7 @@ export default {
             </swiper>
         </div>
         <div class="flex justify-center flex-col order-3 sm:order-3">
-            <a :href="route('braganca')"
+            <a :href="route('guimaraes-heritage-residence')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Guimaraes</h3>
                 <p class="sub-title-card-projects">Heritage Residence</p>
@@ -194,7 +194,7 @@ export default {
             </swiper>
         </div>
         <div class="flex justify-center flex-col order-5 sm:order-6 relative">
-            <a :href="route('parque-das-nacoes')"
+            <a :href="route('office-project')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Offices</h3>
                 <p class="sub-title-card-projects">Project</p>
@@ -240,7 +240,7 @@ export default {
             </swiper>
         </div>
         <div class="flex justify-center flex-col order-7 sm:order-7">
-            <a :href="route('holiday')"
+            <a :href="route('santa-fe-luxury-villa')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Santa Fe</h3>
                 <p class="sub-title-card-projects">Luxury Vila</p>
@@ -255,7 +255,7 @@ export default {
     </div>
     <div class="grid sm:grid-cols-2 grid-cols-1 gap-0 max-w-full mx-auto mb-20">
         <div class="flex justify-center flex-col order-1 sm:order-2">
-            <a :href="route('holiday')"
+            <a :href="route('timeless-temporao-house')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Timeless Temporao</h3>
                 <p class="sub-title-card-projects">House</p>
@@ -336,7 +336,7 @@ export default {
             </swiper>
         </div>
         <div class="flex justify-center flex-col order-3 sm:order-3">
-            <a :href="route('holiday')"
+            <a :href="route('modern-living')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Modern Living</h3>
                 <p class="sub-title-card-projects">Apartment</p>
@@ -382,7 +382,7 @@ export default {
             </swiper>
         </div>
         <div class="flex justify-center flex-col order-5 sm:order-6">
-            <a :href="route('holiday')"
+            <a :href="route('espinho-seaside-retreat')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Espinho Seaside Retreat</h3>
                 <p class="sub-title-card-projects">Apartment</p>

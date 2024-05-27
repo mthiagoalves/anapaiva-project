@@ -1,5 +1,5 @@
 <script setup>
-import GalleryImage from "@/Components/Projects/Braganca/GalleryImage.vue";
+import GalleryImage from "@/Components/Projects/ParqueDasNacoes/GalleryImage.vue";
 
 </script>
 <template>
@@ -17,7 +17,7 @@ import GalleryImage from "@/Components/Projects/Braganca/GalleryImage.vue";
     </div>
 
     <div class="max-w-screen-xl mt-24 mb-20 mx-auto">
-        <h2 class="titles-aurelie">Braganca Apartment</h2>
+        <h2 class="titles-aurelie">Parque das Nacoes Apartment</h2>
         <p class="sub-title-first-section px-5 sm:px-60">
             Step into this timeless apartment, where the past meets the present
             in unmatched harmony. Each space is meticulously designed to
