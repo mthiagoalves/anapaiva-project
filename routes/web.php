@@ -6,7 +6,9 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', [FrontendController::class, 'getHomepage'])->name('homepage');
+Route::get('/', [FrontendController::class, 'inComing'])->name('in-coming');
+
+Route::get('/unknown-site', [FrontendController::class, 'getHomepage'])->name('homepage');
 
 Route::get('/about', [FrontendController::class, 'getAbout'])->name('about');
 

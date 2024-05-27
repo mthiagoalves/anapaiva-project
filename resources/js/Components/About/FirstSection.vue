@@ -5,8 +5,8 @@
         <div class="order-2 sm:order-1">
             <img
                 class="h-auto max-w-full ml-auto"
-                src="https://dummyimage.com/600x650/e9b8b1/fff"
-                alt=""
+                src="/imgs/about/banner-01.png"
+                alt="Photo Ana Paiva"
             />
         </div>
         <div class="flex justify-center flex-col order-1 sm:order-2">
@@ -39,15 +39,15 @@
         <div class="sm:order-4 order-3">
             <img
                 class="h-auto max-w-full"
-                src="https://dummyimage.com/600x400/e9b8b1/fff"
-                alt=""
+                src="/imgs/about/banner-02.png"
+                alt="Lets Talk"
             />
         </div>
         <div class="order-6 sm:order-5">
             <img
                 class="h-auto max-w-full ml-auto"
-                src="https://dummyimage.com/600x400/e9b8b1/fff"
-                alt=""
+                src="/imgs/about/banner-03.png"
+                alt="Our Spaces"
             />
         </div>
         <div
