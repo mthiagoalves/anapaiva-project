@@ -7,6 +7,11 @@ use Inertia\Inertia;
 
 class FrontendController extends Controller
 {
+    public function inComing()
+    {
+        return view('welcome');
+    }
+
     public function getHomepage()
     {
         return Inertia::render('Homepage');
