@@ -150,8 +150,8 @@ export default {
         <div class="flex justify-center flex-col order-3 sm:order-3">
             <a :href="route('guimaraes-heritage-residence')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
-                <h3 class="titles-aurelie">Guimaraes</h3>
-                <p class="sub-title-card-projects">Heritage Residence</p>
+                <h3 class="titles-aurelie">Guimaraes </h3>
+                <p class="sub-title-card-projects">Apartment</p>
                 <span class="years-project mb-6">2023</span>
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 hover-card-2"
@@ -197,7 +197,7 @@ export default {
             <a :href="route('office-project')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Offices</h3>
-                <p class="sub-title-card-projects">Project</p>
+                <p class="sub-title-card-projects">Office</p>
                 <span class="years-project mb-6">2021</span>
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 hover-card-3"
@@ -243,7 +243,7 @@ export default {
             <a :href="route('santa-fe-luxury-villa')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
                 <h3 class="titles-aurelie">Santa Fe</h3>
-                <p class="sub-title-card-projects">Luxury Vila</p>
+                <p class="sub-title-card-projects">Villa</p>
                 <span class="years-project mb-6">2021</span>
                 <div
                     class="absolute min-h-full min-w-full bg-black bg-opacity-0 div-opacity transition duration-500 hover-card-4"
@@ -384,7 +384,7 @@ export default {
         <div class="flex justify-center flex-col order-5 sm:order-6">
             <a :href="route('espinho-seaside-retreat')"
                 class="sm:m-24 my-24 mx-12 sm:h-full border border-gray-950 rounded-lg flex items-center justify-center flex-col relative">
-                <h3 class="titles-aurelie">Espinho Seaside Retreat</h3>
+                <h3 class="titles-aurelie">Espinho Seaside</h3>
                 <p class="sub-title-card-projects">Apartment</p>
                 <span class="years-project mb-6">2021</span>
                 <div

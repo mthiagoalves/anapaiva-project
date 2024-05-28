@@ -30,13 +30,19 @@ Route::get('/projects/modern-living', [FrontendController::class, 'getProjectMod
 
 Route::get('/360', [FrontendController::class, 'get360'])->name('360');
 
-Route::get('/360/braganca', [FrontendController::class, 'get360Braganca'])->name('360.braganca');
+Route::get('/360/geres-house', [FrontendController::class, 'get360Geres'])->name('360.geres');
 
-Route::get('/360/campo-pequeno', [FrontendController::class, 'get360CampoPequeno'])->name('360.campo-pequeno');
+Route::get('/360/guimaraes-heritage-residence', [FrontendController::class, 'get360Guimaraes'])->name('360.guimaraes-heritage-residence');
 
-Route::get('/360/holiday', [FrontendController::class, 'get360Holiday'])->name('360.holiday');
+Route::get('/360/office-project', [FrontendController::class, 'get36OfficeProject'])->name('360.office-project');
 
-Route::get('/360/parque-das-nacoes', [FrontendController::class, 'get360ParqueDasNacoes'])->name('360.parque-das-nacoes');
+Route::get('/360/santa-fe-luxury-villa', [FrontendController::class, 'get360SantaFe'])->name('360.santa-fe-luxury-villa');
+
+Route::get('/360/timeless-temporao-house', [FrontendController::class, 'get360CasaTemporao'])->name('360.timeless-temporao-house');
+
+Route::get('/360/espinho-seaside-retreat', [FrontendController::class, 'get360EspinhoSeasideRetreat'])->name('360.espinho-seaside-retreat');
+
+Route::get('/360/modern-living', [FrontendController::class, 'get360ModernLiving'])->name('360.modern-living');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

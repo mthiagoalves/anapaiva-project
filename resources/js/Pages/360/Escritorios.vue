@@ -1,12 +1,12 @@
 <script setup>
 import { Head } from "@inertiajs/vue3";
 import MainLayout from "@/Layouts/MainLayout.vue";
-import FirstSection from "@/Components/360/Holiday/FirstSection.vue";
+import FirstSection from "@/Components/360/Escritorios/FirstSection.vue";
 </script>
 
 <template>
     <Head>
-        <title>Holiday - 360°</title>
+        <title>Office Project - 360°</title>
     </Head>
 
     <MainLayout>

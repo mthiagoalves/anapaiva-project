@@ -1,12 +1,12 @@
 <script setup>
 import { Head } from "@inertiajs/vue3";
 import MainLayout from "@/Layouts/MainLayout.vue";
-import FirstSection from "@/Components/360/CampoPequeno/FirstSection.vue";
+import FirstSection from "@/Components/360/CasaTemporao/FirstSection.vue";
 </script>
 
 <template>
     <Head>
-        <title>Campo Pequeno - 360°</title>
+        <title>Timeless Temporão House - 360°</title>
     </Head>
 
     <MainLayout>

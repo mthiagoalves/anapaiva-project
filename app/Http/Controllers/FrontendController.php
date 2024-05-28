@@ -62,23 +62,38 @@ class FrontendController extends Controller
         return Inertia::render('360');
     }
 
-    public function get360Braganca()
+    public function get360Geres()
     {
-        return Inertia::render('360/Braganca');
+        return Inertia::render('360/Geres');
     }
 
-    public function get360CampoPequeno()
+    public function get360Guimaraes()
     {
-        return Inertia::render('360/CampoPequeno');
+        return Inertia::render('360/Guimaraes');
     }
 
-    public function get360Holiday()
+    public function get36OfficeProject()
     {
-        return Inertia::render('360/Holiday');
+        return Inertia::render('360/Escritorios');
     }
 
-    public function get360ParqueDasNacoes()
+    public function get360SantaFe()
     {
-        return Inertia::render('360/ParqueDasNacoes');
+        return Inertia::render('360/SantaFe');
+    }
+
+    public function get360CasaTemporao()
+    {
+        return Inertia::render('360/CasaTemporao');
+    }
+
+    public function get360EspinhoSeasideRetreat()
+    {
+        return Inertia::render('360/EspinhoSeasideRetreat');
+    }
+
+    public function get360ModernLiving()
+    {
+        return Inertia::render('360/ModernLiving');
     }
 }
