@@ -1,12 +1,12 @@
 <script setup>
 import { Head } from "@inertiajs/vue3";
 import MainLayout from "@/Layouts/MainLayout.vue";
-import FirstSection from "@/Components/Projects/ParqueDasNacoes/FirstSection.vue";
+import FirstSection from "@/Components/Projects/ModernLiving/FirstSection.vue";
 </script>
 
 <template>
     <Head>
-        <title>Parque  das Nações - Projects</title>
+        <title>Modern Living - Projects</title>
     </Head>
 
     <MainLayout>
