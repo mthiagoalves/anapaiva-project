@@ -95,6 +95,14 @@ const returnRoute360 = () => {
                     </li>
                     <li class="sm:my-0 my-2.5">
                         <NavLink
+                            :href="route('press')"
+                            :active="route().current('press')"
+                        >
+                            Press
+                        </NavLink>
+                    </li>
+                    <li class="sm:my-0 my-2.5">
+                        <NavLink
                             :href="route('360')"
                             :active="returnRoute360()"
                         >

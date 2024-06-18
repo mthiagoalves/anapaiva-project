@@ -27,6 +27,11 @@ class FrontendController extends Controller
         return Inertia::render('Projects');
     }
 
+    public function getPress()
+    {
+        return Inertia::render('Press');
+    }
+
     public function getProjectGeres()
     {
         return Inertia::render('Projects/Geres');

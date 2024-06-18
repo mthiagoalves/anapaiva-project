@@ -24,14 +24,12 @@ export default {
             console.log("slide change");
         };
         const images = [
-            "https://dummyimage.com/825x1000/ababab/000000",
-            "https://dummyimage.com/825x1000/ababab/000000",
-            "https://dummyimage.com/825x1000/ababab/000000",
-            "https://dummyimage.com/825x1000/ababab/000000",
-            "https://dummyimage.com/825x1000/ababab/000000",
-            "https://dummyimage.com/825x1000/ababab/000000",
-            "https://dummyimage.com/825x1000/ababab/000000",
-            "https://dummyimage.com/825x1000/ababab/000000"
+            "/imgs/press/simulation-01.jpg",
+            "/imgs/press/simulation-01.jpg",
+            "/imgs/press/simulation-01.jpg",
+            "/imgs/press/simulation-01.jpg",
+            "/imgs/press/simulation-01.jpg",
+            "/imgs/press/simulation-01.jpg",
         ];
         return {
             onSwiper,
@@ -64,15 +62,18 @@ export default {
 
         <swiper class="relative" :slides-per-view="slidesPerView" :space-between="10" :modules="modules" :pagination="{
             dynamicBullets: true,
-        }" :centeredSlides="true" :centeredSlidesBounds="true" :autoplay="{
-            delay: 3000,
-            disableOnInteraction: false,
-        }" :initialSlide="1" :loop="true" @swiper="onSwiper" @slideChange="onSlideChange">
-            <swiper-slide v-for="(image, index) in images" :key="index" :style="{ backgroundImage: `url(${image})` }"
-                class="background-slide" data-modal-target="modal-press" data-modal-toggle="modal-press">
-                <div class="overlay">
-                    <h3 class="title-banner">Press {{ index + 1 }}</h3>
-                </div>
+        }" :centeredSlides="true" :centeredSlidesBounds="true" :initialSlide="1" :loop="true" @swiper="onSwiper"
+            @slideChange="onSlideChange">
+            <swiper-slide v-for="(image, index) in images" :key="index" data-modal-target="modal-press"
+                data-modal-toggle="modal-press" class="relative">
+                <a href="">
+                    <img :src="image" alt="">
+                    <div class="absolute w-full h-full flex justify-center items-center top-0 left-0">
+                        <div class="overlay h-24">
+                            <h3 class="title-banner">Press {{ index + 1 }}</h3>
+                        </div>
+                    </div>
+                </a>
             </swiper-slide>
         </swiper>
     </div>
@@ -82,18 +83,6 @@ export default {
 
 
 <style scoped>
-.background-slide {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    /* Adjust the height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 25px 50px;
@@ -111,11 +100,6 @@ export default {
 }
 
 @media (max-width: 756px) {
-    .background-slide {
-        height: 300px;
-        /* Adjust the height for mobile */
-    }
-
     .title-banner {
         font-size: 1.5rem;
     }

@@ -14,6 +14,8 @@ Route::get('/about', [FrontendController::class, 'getAbout'])->name('about');
 
 Route::get('/projects', [FrontendController::class, 'getProjects'])->name('projects');
 
+Route::get('/press-area', [FrontendController::class, 'getPress'])->name('press');
+
 Route::get('/projects/geres-house', [FrontendController::class, 'getProjectGeres'])->name('geres');
 
 Route::get('/projects/guimaraes-heritage-residence', [FrontendController::class, 'getProjectGuimaraes'])->name('guimaraes-heritage-residence');
