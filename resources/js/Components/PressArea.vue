@@ -60,7 +60,7 @@ export default {
     <div>
         <h2 class="titles-aurelie">Press Area</h2>
 
-        <swiper class="relative" :slides-per-view="slidesPerView" :space-between="10" :modules="modules" :pagination="{
+        <swiper class="relative mb-32" :slides-per-view="slidesPerView" :space-between="10" :modules="modules" :pagination="{
             dynamicBullets: true,
         }" :centeredSlides="true" :centeredSlidesBounds="true" :initialSlide="1" :loop="true" @swiper="onSwiper"
             @slideChange="onSlideChange">
